@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WebAssmbly Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./md5.js"></script>
+  <script>
+    Module.onRuntimeInitialized = _ => {
+      document.body.innerText = `md5(wasm) = ${Pointer_stringify(_cmd5(JSfuncs.stringToC('wasm')))}`;
+    };
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
